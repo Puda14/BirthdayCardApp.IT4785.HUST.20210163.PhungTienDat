@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#222222"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:srcCompat="@android:mipmap/sym_def_app_icon"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            tools:ignore="ContentDescription,RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Linear Layout Calculator"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:gravity="center"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:ems="10"
+        android:inputType="number"
+        android:text="0"
+        android:textSize="70sp"
+        android:layout_weight="2"
+        android:textAlignment="textEnd"
+        android:padding="20dp"
+        tools:ignore="Autofill,HardcodedText,LabelFor" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="5dp"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+
+            tools:ignore="NestedWeights">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="CE"
+                android:background="@drawable/button_custom1"
+                android:layout_margin="5dp"
+                tools:ignore="ButtonStyle,HardcodedText" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="C"
+                android:background="@drawable/button_custom1"
+                android:layout_margin="5dp"
+                tools:ignore="ButtonStyle,HardcodedText" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="BS"
+                android:background="@drawable/button_custom1"
+                android:layout_margin="5dp"
+                tools:ignore="ButtonStyle,HardcodedText" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="/"
+                android:background="@drawable/button_custom1"
+                android:layout_margin="5dp"
+                tools:ignore="ButtonStyle,HardcodedText" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+
+            tools:ignore="NestedWeights">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="7"
+                android:background="@drawable/button_custom2"
+                android:layout_margin="5dp"
+                tools:ignore="ButtonStyle,HardcodedText" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="8"
+                android:background="@drawable/button_custom2"
+                android:layout_margin="5dp"
+                tools:ignore="ButtonStyle,HardcodedText" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="9"
+                android:background="@drawable/button_custom2"
+                android:layout_margin="5dp"
+                tools:ignore="ButtonStyle,HardcodedText" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="x"
+                android:background="@drawable/button_custom1"
+                android:layout_margin="5dp"
+                tools:ignore="ButtonStyle,HardcodedText" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+
+            tools:ignore="NestedWeights">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="4"
+                android:background="@drawable/button_custom2"
+                android:layout_margin="5dp"
+                tools:ignore="ButtonStyle,HardcodedText" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="5"
+                android:background="@drawable/button_custom2"
+                android:layout_margin="5dp"
+                tools:ignore="ButtonStyle,HardcodedText" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="6"
+                android:background="@drawable/button_custom2"
+                android:layout_margin="5dp"
+                tools:ignore="ButtonStyle,HardcodedText" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="-"
+                android:background="@drawable/button_custom1"
+                android:layout_margin="5dp"
+                tools:ignore="ButtonStyle,HardcodedText" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+
+            tools:ignore="NestedWeights">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="1"
+                android:background="@drawable/button_custom2"
+                android:layout_margin="5dp"
+                tools:ignore="ButtonStyle,HardcodedText" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="2"
+                android:background="@drawable/button_custom2"
+                android:layout_margin="5dp"
+                tools:ignore="ButtonStyle,HardcodedText" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="3"
+                android:background="@drawable/button_custom2"
+                android:layout_margin="5dp"
+                tools:ignore="ButtonStyle,HardcodedText" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="+"
+                android:background="@drawable/button_custom1"
+                android:layout_margin="5dp"
+                tools:ignore="ButtonStyle,HardcodedText" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+
+            tools:ignore="NestedWeights">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="+/-"
+                android:background="@drawable/button_custom1"
+                android:layout_margin="5dp"
+                tools:ignore="ButtonStyle,HardcodedText" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="0"
+                android:background="@drawable/button_custom2"
+                android:layout_margin="5dp"
+                tools:ignore="ButtonStyle,HardcodedText" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="."
+                android:background="@drawable/button_custom1"
+                android:layout_margin="5dp"
+                tools:ignore="ButtonStyle,HardcodedText" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="="
+                android:background="@drawable/button_custom1"
+                android:layout_margin="5dp"
+                tools:ignore="ButtonStyle,HardcodedText" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
