@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:gravity="center_vertical"
+    android:background="?attr/selectableItemBackground">
+
+    <ImageView
+        android:id="@+id/emailAvatar"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/circle_background"
+        android:elevation="2dp"
+        android:padding="8dp"
+        android:contentDescription="Sender Avatar"
+        android:src="@drawable/ic_user_avatar" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/emailSender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Sender Name"
+            android:textSize="16sp"
+            android:textColor="#333333" />
+
+        <TextView
+            android:id="@+id/emailSubject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subject of Email"
+            android:textSize="15sp"
+            android:layout_marginTop="2dp"
+            android:textColor="#222222" />
+
+        <TextView
+            android:id="@+id/emailSummary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Summary of the email content"
+            android:textSize="13sp"
+            android:layout_marginTop="2dp"
+            android:textColor="#757575" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/emailTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12:34 PM"
+        android:textSize="12sp"
+        android:textColor="#757575"
+        android:layout_marginStart="8dp" />
+</LinearLayout>
