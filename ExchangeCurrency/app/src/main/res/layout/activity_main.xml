@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#f5f5f5">
+
+    <TextView
+        android:id="@+id/sourceLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Source Currency"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/sourceAmount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:hint="Enter Amount"
+        android:padding="12dp"
+        android:backgroundTint="#4CAF50"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/sourceLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        tools:ignore="HardcodedText" />
+
+    <Spinner
+        android:id="@+id/sourceCurrency"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:backgroundTint="#4CAF50"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/sourceAmount"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="#DDDDDD"
+        app:layout_constraintTop_toBottomOf="@id/sourceCurrency"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/destinationLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Destination Currency"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        app:layout_constraintTop_toBottomOf="@id/sourceCurrency"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="24dp"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/destinationAmount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:hint="Converted Amount"
+        android:focusable="false"
+        android:padding="12dp"
+        android:backgroundTint="#FF5722"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/destinationLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        tools:ignore="HardcodedText" />
+
+    <Spinner
+        android:id="@+id/destinationCurrency"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:backgroundTint="#FF5722"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/destinationAmount"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
