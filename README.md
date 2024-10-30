@@ -10,3 +10,4 @@ For each assignment, please consider to check project folder
 - Assignment 02/10/2024: ConstraintLayoutCalculator folder
 - Assignment 09/10/2024: Calculator folder
 - Assignment 23/10/2024: ExchangeCurrency and Gmail folder
+- Assignment 30/10/2024: SimpleList and FindInList folder
