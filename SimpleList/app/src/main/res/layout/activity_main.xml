@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F0F0F0">
+
+    <!-- Number Input with Rounded Background and Padding -->
+    <EditText
+        android:id="@+id/etNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập số nguyên dương"
+        android:inputType="number"
+        android:background="#FFFFFF"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:elevation="2dp"
+        android:textColor="#333333"
+        android:textColorHint="#888888" />
+
+    <!-- Radio Group Centered with Spacing -->
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp">
+
+        <RadioButton
+            android:id="@+id/rbEven"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số chẵn"
+            android:padding="8dp"
+            android:textColor="#333333" />
+
+        <RadioButton
+            android:id="@+id/rbOdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số lẻ"
+            android:padding="8dp"
+            android:textColor="#333333" />
+
+        <RadioButton
+            android:id="@+id/rbSquare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số chính phương"
+            android:padding="8dp"
+            android:textColor="#333333" />
+    </RadioGroup>
+
+    <!-- Styled Button with Center Alignment -->
+    <Button
+        android:id="@+id/btnShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:background="#4CAF50"
+        android:textColor="#FFFFFF"
+        android:padding="12dp"
+        android:elevation="3dp" />
+
+    <!-- ListView with Rounded Corners and Padding -->
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#CCCCCC"
+        android:dividerHeight="1dp"
+        android:background="#FFFFFF"
+        android:padding="8dp"
+        android:layout_marginBottom="16dp"
+        android:elevation="1dp" />
+
+    <!-- Error Message Text with Styling -->
+    <TextView
+        android:id="@+id/tvError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#D32F2F"
+        android:paddingTop="8dp"
+        android:visibility="gone"
+        android:textStyle="bold"/>
+
+</LinearLayout>
