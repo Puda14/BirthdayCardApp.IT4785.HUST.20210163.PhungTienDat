@@ -14,3 +14,4 @@ For each assignment, please consider to check project folder
 - Assignment 13/11/2024: StudentMan folder
 - Assignment 20/11/2024: StudentManagerv2 folder
 - Assignment 27/11/2024: StudentManagerFragment folder
+- Assignment 18/12/2024: StudentManagerRoom folder
